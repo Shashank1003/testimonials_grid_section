@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.main-box {
+  display: grid;
+  margin: 7% 8% 2% 10%;
+  padding-bottom: 0;
+  grid-template-columns: minmax(205px, 23%) minmax(205px, 23%) minmax(205px, 23%) minmax(205px, 23%);
+  grid-template-rows: repeat(2, 43%);
+  grid-gap: 2rem;
+}
+
+.container {
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 5px 5px 80px hsl(0, 0%, 81%);
+}
+
+.profile-img {
+  border-radius: 100%;
+  float: left;
+  margin-right: 1rem;
+}
+
+.name {
+  font-size: 0.862vw;
+  /* font-size: 100%; */
+  font-weight: 500;
+  line-height: 0;
+}
+
+.verified-graduate {
+  font-size: 0.862vw;
+  font-weight: 500;
+  line-height: 10px;
+  opacity: 50%;
+}
+
+.title-line {
+  font-size: 1.293vw;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.quotation {
+  opacity: 70%;
+  font-size: 0.862vw;
+  font-weight: 500;
+}
+
+/* Card-1 */
+.card-1 {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: right 5vw top 0;
+  background-size: 25%;
+}
+
+.card-1 .profile-img {
+  border: solid rgba(255, 255, 255, 0.5);
+}
+
+/* Card-2 */
+.card-2 {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+/* Card-3 */
+.card-3 {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+/* Card-4 */
+.card-4 {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.card-4 .profile-img {
+  border: solid hsl(263, 55%, 52%);
+}
+
+/* Card-5 */
+.card-5 {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+@media screen and (max-width: 1080px) {
+  .main-box {
+    grid-template-columns: minmax(205px, 25%) minmax(205px, 25%) minmax(205px, 23%) minmax(205px, 23%);
+    grid-template-rows: repeat(2, 40%);
+    margin: 7% 15% 0 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-box {
+    display: block;
+    margin: 1vw;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .verified-graduate {
+    font-size: 1rem;
+  }
+
+  .title-line {
+    font-size: 2.0rem;
+  }
+
+  .quotation {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin: 2rem;
+  }
+}
